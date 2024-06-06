@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    background-color: var(--off-black);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 26rem;
+    padding: 2.5rem;
+    align-items: center;
+    border-radius: 1.5rem;
+    background-color: var(--dark-grey);
+    margin: 5rem auto 5rem;
+}
+
+img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10rem;
+    margin-bottom: 1rem;
+}
+
+.name{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.place{
+    color: var(--green);
+    margin-top: -.5rem;
+    font-weight: 500;
+}
+
+.info{
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.github,
+.frontend,
+.linkedin,
+.twitter,
+.instagram{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    color: var(--white);
+    margin: .4rem;
+    background-color: var(--grey);
+    padding: 1rem 3rem;
+    width: 80%;
+    border-radius: .7rem;
+}
+
+.github:hover,
+.frontend:hover,
+.linkedin:hover,
+.twitter:hover,
+.instagram:hover{
+    color: var(--dark-grey);
+    font-weight: 700;
+    background-color: var(--green);
+    transition: 0.5s;
+    opacity: .7;
+}
+
+.attribution{ 
+    font-size: 11px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--green);
+}
+
+.attribution a:hover{
+    transition: .5s;
+    opacity: .5;
+}
